@@ -1,0 +1,38 @@
+# Core deep learning
+torch
+pytorch-lightning
+monai
+einops
+
+# Scientific computing
+numpy
+scipy
+scikit-learn
+pandas
+statsmodels
+h5py
+PyYAML
+
+# Feature-extraction teachers (Stage 0 / extract_features.py)
+transformers
+laion-clap
+# Optional extractors, install as needed:
+# torchvision
+# torchaudio
+# librosa
+# soundfile
+# opencv-python
+# panns-inference
+# google-genai
+
+# Encoding / readout analysis (Stage 1 / encoding.py)
+himalaya
+voxelwise-tutorials
+
+# Experiment tracking and utilities
+wandb
+tqdm
+matplotlib
+
+# Brain-surface visualization (visualize.py, encoding/ROI utilities)
+# pycortex
