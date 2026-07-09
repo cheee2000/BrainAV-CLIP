@@ -67,6 +67,7 @@ Training scripts (`train_mae_3d.py`, `train_BrainCLIP.py`,
   ```
    Paste your API key from [https://wandb.ai/authorize](https://wandb.ai/authorize) when prompted. Do not
    commit API keys into the repository.
+
 2. **Set your entity (username or team)**. Each training script defines:
   ```python
    WANDB_ENTITY = os.getenv("WANDB_ENTITY", "YOUR_WANDB_ENTITY")
@@ -74,6 +75,7 @@ Training scripts (`train_mae_3d.py`, `train_BrainCLIP.py`,
   ```
    Either export the environment variable:
    or replace `YOUR_WANDB_ENTITY` in the script with your wandb username/team.
+
 3. **Offline / no account**: skip cloud upload with:
   ```bash
    export WANDB_MODE=offline
@@ -225,10 +227,7 @@ python train_BrainAVCLIP_decorr.py \
   --co_error_gamma_a 10.0 
 ```
 
-Useful flags: `--visual_roi` / `--audio_roi` (often `ROI_V` + `ROI_A` from  
-Stage 1), `--no_decorr`, `--co_error_gamma_v` / `--co_error_gamma_a`,  
-`--freeze_visual` / `--freeze_audio`, and `--run_grid` for batch runs. The MAE  
-checkpoint directory is set via the `pretrained_mae_path` block.
+Useful flags: `--visual_roi` / `--audio_roi` (often `ROI_V` + `ROI_A` from Stage 1), `--no_decorr`, `--co_error_gamma_v` / `--co_error_gamma_a`, `--freeze_visual` / `--freeze_audio`, and `--run_grid` for batch runs. The MAE checkpoint directory is set via the `pretrained_mae_path` block.
 
 ## Notes
 
